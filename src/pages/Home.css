@@ -1,0 +1,91 @@
+.hero {
+  min-height: calc(100vh - 75px);
+  display: flex;
+  align-items: center;
+  padding: 60px 8%;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(35, 25, 18, 0.85),
+      rgba(35, 25, 18, 0.35)
+    ),
+    url("https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1800&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 650px;
+  color: white;
+}
+
+.hero-subtitle {
+  color: #d4a373;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 6vw, 78px);
+  line-height: 1.05;
+  margin: 0 0 25px;
+}
+
+.hero h1 span {
+  color: #d4a373;
+}
+
+.hero-description {
+  max-width: 520px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #eee;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.hero-buttons a {
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.primary-btn {
+  background: #a47148;
+  color: white;
+}
+
+.secondary-btn {
+  border: 1px solid white;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #8b5e3c;
+}
+
+.secondary-btn:hover {
+  background: white;
+  color: #2f241f;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 25px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    max-width: 200px;
+  }
+
+  .hero-buttons a {
+    text-align: center;
+  }
+}
